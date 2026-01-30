@@ -3,7 +3,7 @@ const context = canvas.getContext("2d");
 
 const frameCount = 200;
 const currentFrame = index =>
-  `Images/ezgif-1dd23721c96b77f7-jpg/ezgif-frame-${String(index).padStart(3, "0")}.jpg`;
+  `Images/ezgif-frame-${String(index).padStart(3, "0")}.jpg`;
 
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
@@ -74,3 +74,4 @@ window.addEventListener("resize", () => {
   canvas.height = window.innerHeight;
   drawFrame(currentFrameIndex + 1);
 });
+
